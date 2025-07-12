@@ -1,2 +1,23 @@
-# terraform-aws-vpc-ec2-rds
-Terraform project to deploy AWS infrastructure — includes a VPC with public/private subnets, an EC2 instance, and an RDS MySQL database. Fully automated using Infrastructure as Code (IaC) principles with Terraform.
+# AWS Infrastructure with Terraform
+
+This project provisions a complete AWS infrastructure using Terraform, including:
+- A custom VPC with public and private subnets across 2 Availability Zones
+- An EC2 instance in the public subnet
+- An RDS MySQL database in the private subnets
+- Internet Gateway, Route Tables, and Security Groups
+- Fully automated IaC setup using Terraform
+
+## Tech Stack
+- Terraform
+- AWS (VPC, EC2, RDS)
+- HCL
+
+## Setup Instructions
+
+1. Clone the repo
+2. Configure your AWS CLI (`aws configure`)
+3. Run:
+   ```bash
+   terraform init
+   terraform plan
+   terraform apply
